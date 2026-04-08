@@ -30,12 +30,14 @@ attribute_2 = "value_2"
 <br>
 
 ### Terraform Workflow:
-1. write
+1. **write**
 2. init *_(run once to initialize the tf project, or when updating providers or modules)_
-3. validate
-4. plan
-5. apply
+3. validate *_(validate HCL for syntax, does not reach out to providers)_
+4. **plan**
+5. **apply**
 6. destroy
+
+_note: bolded steps are the official Terraform workflow, the other steps are placed where they would likely occur in production_
 
 <br>
 
