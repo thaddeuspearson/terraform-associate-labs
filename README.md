@@ -32,8 +32,10 @@ attribute_2 = "value_2"
 ### Terraform Workflow:
 1. write
 2. init *_(run once to initialize the tf project, or when updating providers or modules)_
-3. plan
-4. apply
+3. validate
+4. plan
+5. apply
+6. destroy
 
 <br>
 
