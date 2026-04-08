@@ -12,9 +12,9 @@
 ```hcl
 # single-line comment
 block_type "block_label" "block_label" {
-    first_argument = expression or value
-    second_argument = expression or value
-    third_argument = expression or value
+  first_argument = expression or value
+  second_argument = expression or value
+  third_argument = expression or value
 }
 
 attribute_1 = "value_1"
