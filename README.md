@@ -22,7 +22,7 @@ block_type "block_label" "block_label" {
 attribute_1 = "value_1"
 attribute_2 = "value_2"
 ```
-
+**Notes:**
 - snake_case convention
 - assignment operators are vertically aligned
 - `terraform fmt` to automatically format
@@ -34,3 +34,29 @@ attribute_2 = "value_2"
 2. init *_(run once to initialize the tf project, or when updating providers or modules)_
 3. plan
 4. apply
+
+<br>
+
+### `.terraform` Directory
+
+```
+.
+├── 📁 .terraform/              # Managed by Terraform (Auto-generated)
+│   ├── 📁 modules/             # Local cache of external modules
+│   ├── 📁 providers/           # Downloaded provider binaries (AWS, Google, etc.)
+│   └── 📄 terraform.tfstate    # Backend configuration (NOT the actual state)
+│
+├── 📄 .terraform.lock.hcl      # Dependency lock file (Locking provider versions)
+│
+├── 📄 main.tf                  # Primary infrastructure configuration
+├── 📄 variables.tf             # Input variable definitions
+├── 📄 outputs.tf               # Values to return after deployment
+│
+├── 📄 terraform.tfstate        # Your actual local state file (Generated after 'apply')
+├── 📄 terraform.tfstate.backup # Previous version of the state file
+└── 📄 terraform.tfvars         # (Optional) Secret or specific variable values
+```
+**Notes:**
+- `.terraform/` should be added to `.gitignore`
+- `terraform init` to easilly recreate `.terraform/`
+- great for troubleshooting or cleaning up old dependencies 
