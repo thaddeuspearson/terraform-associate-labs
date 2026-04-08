@@ -12,13 +12,17 @@
 ```hcl
 # single-line comment
 block_type "block_label" "block_label" {
-  first_argument = expression or value
+  first_argument  = expression or value
   second_argument = expression or value
-  third_argument = expression or value
+  third_argument  = expression or value
 }
 
 attribute_1 = "value_1"
 attribute_2 = "value_2"
 ```
+
+- snake_case convention
+- assignment operators are vertically aligned
+- `terraform fmt` to automatically format
 
 
