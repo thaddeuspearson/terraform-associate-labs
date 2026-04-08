@@ -7,7 +7,9 @@
 
 <br>
 
-## HCL Structure
+## Notes:
+
+### HCL Structure:
 
 ```hcl
 # single-line comment
@@ -25,4 +27,10 @@ attribute_2 = "value_2"
 - assignment operators are vertically aligned
 - `terraform fmt` to automatically format
 
+<br>
 
+### Terraform Workflow:
+1. write
+2. init *_(run once to initialize the tf project, or when updating providers or modules)_
+3. plan
+4. apply
