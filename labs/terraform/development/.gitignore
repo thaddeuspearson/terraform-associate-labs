@@ -1,0 +1,13 @@
+# Ignore local state files
+*.tfstate
+*.tfstate.*
+
+# Ignore the local provider cache
+.terraform/
+
+# Ignore local variable files
+*.tfvars
+*.tfvars.json
+
+# Ignore the temporary lock info
+.terraform.tfstate.lock.info
