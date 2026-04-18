@@ -5,4 +5,4 @@
 
 - [Labs Repo](https://github.com/btkrausen/terraform-associate-labs)
 
-- [Terraform Module Registry](https://registery.teraform.io)
+- [Terraform Module Registry](https://registry.terraform.io)
