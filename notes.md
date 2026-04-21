@@ -62,4 +62,4 @@ _note: bolded steps are the official Terraform workflow, the other steps are pla
 1. Variable Validation - _(defined in variable blocks)_
 2. Precondition - _(before apply)_
 3. Postcondition - _(after apply)_
-4. Checks - (base-level block, raises warning)_
+4. Checks - _(base-level block, raises warning)_
