@@ -55,3 +55,11 @@ _note: bolded steps are the official Terraform workflow, the other steps are pla
 - `.terraform/` should be added to `.gitignore`
 - `terraform init` to easilly recreate `.terraform/`
 - great for troubleshooting or cleaning up old dependencies
+
+
+### Validation Hierarchy
+
+1. Variable Validation - _(defined in variable blocks)_
+2. Precondition - _(before apply)_
+3. Postcondition - _(after apply)_
+4. Checks - (base-level block, raises warning)_
