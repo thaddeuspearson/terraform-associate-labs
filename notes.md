@@ -56,6 +56,7 @@ _note: bolded steps are the official Terraform workflow, the other steps are pla
 - `terraform init` to easilly recreate `.terraform/`
 - great for troubleshooting or cleaning up old dependencies
 
+<br>
 
 ### Validation Hierarchy
 
@@ -63,3 +64,13 @@ _note: bolded steps are the official Terraform workflow, the other steps are pla
 2. Precondition - _(before apply)_
 3. Postcondition - _(after apply)_
 4. Checks - _(base-level block, raises warning)_
+
+<br>
+
+### Defense in Depth Strategy with Secrets
+
+1. `sensitive = true` for variables and outputs
+2. use env vars to avoid saving secrets in version control
+3. encrypt state at rest _(ex: s3 bucket encrypted at rest)_
+4. secret managers _(AWS Secret manager, Vault)_
+5. `ephemeral = true` _(local, provider, write-only arguments)_, skip state all together
